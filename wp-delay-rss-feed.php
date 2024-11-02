@@ -1,7 +1,7 @@
 <?php
 
 // WordPress function to delay RSS feed
-// URL: https://git.sr.ht/~e33io/webdev/tree/main/item/wp-delay-rss-feed.php
+// URL: https://github.com/e33io/webdev/blob/main/wp-delay-rss-feed.php
 
 function e33_delay_rss_feed( $where ) {
 	global $wpdb;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- https://git.sr.ht/~e33io/webdev/tree/main/item/image-grid-web-page -->
+		<!-- https://github.com/e33io/webdev/tree/main/image-grid-web-page -->
 		<meta charset="UTF-8">
 		<title>e33io shared images</title>
 		<meta name="description" content="a collection of screenshots and other images">
@@ -27,7 +27,7 @@
 			</div>
 			<h4>a collection of screenshots and other images</h4>
 			<hr>
-			<p>git repos: <a href="https://git.sr.ht/~e33io">git.sr.ht/~e33io</a><br>
+			<p>git repos: <a href="https://github.com/e33io">github.com/e33io</a><br>
 			main blog: <a href="https://e33.io">e33.io</a><br>
 			micro blog: <a href="https://micro.e33.io">micro.e33.io</a></p>
 			<div class='site-map'>

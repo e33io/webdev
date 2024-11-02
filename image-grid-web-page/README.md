@@ -26,4 +26,4 @@ exiftool -overwrite_original -recurse -all= -TagsFromFile @ -ColorSpaceTags /hom
 ```
 
 ### License
-[BSD Zero Clause License](https://git.sr.ht/~e33io/webdev/tree/main/item/image-grid-web-page/LICENSE)
+[BSD Zero Clause License](https://github.com/e33io/webdev/blob/main/image-grid-web-page/LICENSE)

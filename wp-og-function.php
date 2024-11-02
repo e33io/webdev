@@ -1,7 +1,7 @@
 <?php
 
 // WordPress function for adding Open Graph and Twitter Card meta tags
-// URL: https://git.sr.ht/~e33io/webdev/tree/main/item/wp-og-function.php
+// URL: https://github.com/e33io/webdev/blob/main/wp-og-function.php
 
 function e33_og_meta_tags() {
 	global $post;

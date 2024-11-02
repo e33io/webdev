@@ -1,7 +1,7 @@
 <?php
 
 // WordPress function to modify the Tag Cloud widget
-// URL: https://git.sr.ht/~e33io/webdev/tree/main/item/wp-modify-tag-widget.php
+// URL: https://github.com/e33io/webdev/blob/main/wp-modify-tag-widget.php
 
 function mod_tag_cloud_widget() {
 	$args = array(
