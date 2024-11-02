@@ -1,0 +1,131 @@
+/*
+CSS normalize 
+URL: https://git.sr.ht/~e33io/webdev/tree/main/item/css-normalize.css
+*/
+
+html {
+	box-sizing: border-box;
+	font-family: system-ui, sans-serif;
+	line-height: 1.25;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+body {
+	margin: 0;
+}
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+pre,
+code {
+	font-family: monospace, monospace;
+	font-size: 0.937em;
+}
+pre {
+	tab-size: 4;
+	overflow: auto;
+}
+strong,
+b {
+	font-weight: 700;
+}
+blockquote,
+q {
+	font-style: italic;
+}
+ol,
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+sub,
+sup {
+	font-size: 0.75em;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sub {
+	bottom: -0.25em;
+}
+sup {
+	top: -0.5em;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+th,
+td {
+	border: 1px solid;
+	padding: 0.25em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 1em;
+	line-height: inherit;
+	margin: 0;
+}
+button,
+input,
+textarea {
+	background-color: inherit;
+	color: inherit;
+	border: 1px solid;
+	border-radius: 0;
+	outline: 0;
+	padding: 0.25em;
+	max-width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+button,
+select {
+	text-transform: none;
+}
+::-webkit-search-decoration,
+::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+}
+progress {
+	vertical-align: baseline;
+}
+summary {
+	display: list-item;
+}
+blockquote,
+figure {
+	margin-left: 0;
+	margin-right: 0;
+}
+details,
+audio,
+img,
+video {
+	display: block;
+}
+img,
+video {
+	height: auto;
+	max-width: 100%;
+}
+embed,
+iframe,
+object {
+	max-width: 100%;
+}

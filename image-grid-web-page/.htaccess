@@ -1,0 +1,72 @@
+DirectoryIndex index.html index.php
+
+AddDefaultCharset UTF-8
+
+IndexOptions FancyIndexing HTMLTable FoldersFirst NameWidth=* SuppressSize SuppressDescription
+IndexHeadInsert "<meta name='viewport' content='width=device-width, initial-scale=1'> <meta name='robots' content='noindex, nofollow'>"
+IndexStyleSheet "/assets/css/style.css"
+IndexIgnore ..
+
+# FORCE HTTPS AND HIDE .PHP EXTENSION
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L] 
+# FORCE HTTPS AND HIDE .PHP EXTENSION
+
+# EXPIRES CACHING
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access plus 90 days"
+ExpiresByType image/jpeg "access plus 90 days"
+ExpiresByType image/gif "access plus 90 days"
+ExpiresByType image/png "access plus 90 days"
+ExpiresByType image/svg "access plus 90 days"
+ExpiresByType image/x-icon "access plus 90 days"
+ExpiresByType video/mp4 "access plus 90 days"
+ExpiresByType video/mpeg "access plus 90 days"
+ExpiresByType font/woff2 "access plus 90 days"
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType text/javascript "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+ExpiresByType application/x-javascript "access plus 1 month"
+ExpiresByType application/pdf "access plus 90 days"
+ExpiresDefault "access plus 1 week"
+</IfModule>
+# EXPIRES CACHING
+
+# GZIP COMPRESSION
+<IfModule mod_deflate.c>
+# COMPRESS HTML, CSS, JAVASCRIPT, TEXT, XML AND FONTS
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+AddOutputFilterByType DEFLATE application/x-font
+AddOutputFilterByType DEFLATE application/x-font-opentype
+AddOutputFilterByType DEFLATE application/x-font-otf
+AddOutputFilterByType DEFLATE application/x-font-truetype
+AddOutputFilterByType DEFLATE application/x-font-ttf
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE font/opentype
+AddOutputFilterByType DEFLATE font/otf
+AddOutputFilterByType DEFLATE font/ttf
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE image/x-icon
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/xml
+</IfModule>
+# GZIP COMPRESSION
+
+# NOINDEX X-ROBOTS-TAG DIRECTIVE FOR IMAGES FILES
+<Files ~ "\.(jpe?g|png|svg|mp4)$">
+Header set X-Robots-Tag "noindex"
+</Files>
+# NOINDEX X-ROBOTS-TAG DIRECTIVE FOR IMAGES FILES

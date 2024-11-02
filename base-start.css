@@ -1,0 +1,66 @@
+/*
+Base start CSS for testing and theme development
+URL: https://git.sr.ht/~e33io/webdev/tree/main/item/base-start.css
+*/
+
+/* CSS normalize styles */
+html{box-sizing:border-box;font-family:system-ui,sans-serif;line-height:1.25;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;}*,*:before,*:after{box-sizing:inherit;}body{margin:0;}h1{font-size:2em;margin:.67em 0;}hr{box-sizing:content-box;height:0;}pre,code{font-family:monospace,monospace;font-size:.937em;}pre{tab-size:4;overflow:auto;}strong,b{font-weight:700;}blockquote,q{font-style:italic;}ol,ul{list-style:none;padding:0;margin:0;}sub,sup{font-size:.75em;line-height:0;position:relative;vertical-align:baseline;}sub{bottom:-.25em;}sup{top:-.5em;}table{border-collapse:collapse;border-spacing:0;}th,td{border:1px solid;padding:.25em;}button,input,optgroup,select,textarea{font-family:inherit;font-size:1em;line-height:inherit;margin:0;}button,input,textarea{background-color:inherit;color:inherit;border:1px solid;border-radius:0;outline:0;padding:.25em;max-width:100%;-webkit-appearance:none;-moz-appearance:none;}button,select{text-transform:none;}::-webkit-search-decoration,::-webkit-search-cancel-button{-webkit-appearance:none;}progress{vertical-align:baseline;}summary{display:list-item;}blockquote,figure{margin-left:0;margin-right:0;}details,audio,img,video{display:block;}img,video{height:auto;max-width:100%;}embed,iframe,object{max-width:100%;}
+
+/* base styles */
+html {
+	font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (3840 - 320)));
+	margin: 0 auto;
+	padding: 10% 2.5%;
+	max-width: 1080px;
+}
+a {
+	color: #00e;
+	text-underline-offset: 0.075em;
+}
+pre,
+code {
+	font-family: Menlo, Consolas, 'Liberation Mono', monospace;
+}
+pre {
+	background-color: #333;
+	color: #fff;
+	line-height: 1.5;
+	padding: 1rem;
+}
+pre[class*="language-"] {
+	background: #333;
+}
+:not(pre) > code {
+	font-size: 0.9rem;
+	background-color: #eee;
+	border-radius: 0.25rem;
+	padding: 0.25rem;
+}
+h1 {
+	line-height: 1.15;
+}
+p {
+	line-height: 1.5;
+}
+article ul:not([class]) {
+	list-style: disc;
+	padding: 0 0 0 1rem;
+}
+article ol:not([class]) {
+	list-style: decimal;
+	padding: 0 0 0 1rem;
+}
+article ul:not([class]) li,
+article ol:not([class]) li {
+	margin: 0.5rem 0;
+}
+figcaption,
+cite {
+	font-size: 0.875rem;
+	font-style: italic;
+}
+blockquote {
+	border-left: 1px solid;
+	padding-left: 1rem;
+	font-style: italic;
+}

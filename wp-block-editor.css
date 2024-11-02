@@ -1,0 +1,60 @@
+/*
+WordPress Block Editor CSS
+URL: https://git.sr.ht/~e33io/webdev/tree/main/item/wp-block-editor.css
+Copy file here: assets/css/wp-block-editor.css, use with this function:
+https://git.sr.ht/~e33io/webdev/tree/main/item/wp-block-editor-function.php
+*/
+
+@import url('https://rsms.me/inter/inter.css');
+.editor-post-title.editor-post-title__block,
+.block-editor-block-list__block {
+	font-family: Inter, sans-serif;
+}
+.wp-block-cover__inner-container {
+	color: #ffffff !important;
+}
+blockquote {
+	border-left: solid;
+	padding-left: 0.938rem;
+}
+.wp-block-pullquote blockquote {
+	border-left: none;
+}
+.wp-block-pullquote {
+	border-top: solid;
+	border-bottom: solid;
+	margin: 2rem 0;
+	padding: 0;
+}
+.wp-block-pullquote__citation {
+	text-transform: initial !important;
+}
+.wp-block-paragraph code,
+.wp-block-preformatted,
+pre.wp-block-code {
+	box-sizing: border-box;
+	font-family: 'DejaVu Sans Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+	font-variant-ligatures: none;
+	background: #e7e7e7 !important;
+	color: #000000 !important;
+	border-radius: 0.25rem;
+	font-size: 0.875rem;
+	padding: 1rem;
+}
+.wp-block-paragraph code {
+	font-size: 0.938rem;
+	padding: 0.25rem;
+}
+.wp-block-verse {
+	box-sizing: border-box;
+	background: #e7e7e7 !important;
+	color: #000000 !important;
+	border-radius: 0.25rem;
+	font-size: 0.938rem;
+	padding: 1rem;
+}
+@media (min-width: 1601px) {
+	.wp-block {
+		max-width: 800px;
+	}
+}
