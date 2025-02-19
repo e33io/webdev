@@ -11,7 +11,7 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="assets/fonts/inter/inter.css">
-		<link rel="stylesheet" href="assets/fonts/plexmonomod/plexmonomod.css">
+		<link rel="stylesheet" href="assets/fonts/sovranmono/sovranmono.css">
 		<meta property="og:title" content="e33io shared images">
 		<meta property="og:description" content="a collection of screenshots and other images">
 		<meta property="og:image" content="https://i.e33.io/assets/images/icon-630px.png">

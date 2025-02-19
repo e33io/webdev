@@ -1,7 +1,7 @@
 /* https://github.com/e33io/webdev/tree/main/image-grid-web-page */
 :root {
 	--sans-serif-font: Inter, sans-serif;
-	--monospace-font: PlexMonoMod, monospace;
+	--monospace-font: SovranMono, monospace;
 	--background-color: #111111;
 	--text-color: #eeeeee;
 	--accent-color: #00ffff;
