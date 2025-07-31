@@ -29,4 +29,4 @@
 - [`wp-og-function.php`](https://github.com/e33io/webdev/blob/main/wp-og-function.php) - WordPress function for adding Open Graph and Twitter Card meta tags
 
 ### License
-[BSD Zero Clause License](https://github.com/e33io/webdev/blob/main/LICENSE)
+[The Unlicense](https://github.com/e33io/webdev/blob/main/LICENSE)
